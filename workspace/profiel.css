@@ -1,0 +1,205 @@
+.bgimg {
+    background-image: url('profielachtergrond.png');
+    width:100%;
+    height:350px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  font-family:'Open Sans', sans-serif;
+  color:white;
+  line-height:350px;
+  
+}
+
+.profielfoto{
+	width:100px;
+	margin:-50px 0px 0px 0px;
+}
+
+.naam{
+	text-transform: capitalize;
+	font-family:'Open Sans', sans-serif;
+	font-size:45px;
+	margin:-5px 0px 0px 0px;
+}
+
+
+
+.profielmenulist{
+	float:right;
+	list-style-type:none;
+	font-family:'Open Sans', sans-serif;
+	font-size:25px;
+	font-weight:600;
+	position:relative;
+	
+}
+
+.profielmenulist li {
+	padding:10px 20px 10px 8px;
+	color:#4D4B4C;
+	border-top-left-radius:4px;
+	border-bottom-left-radius:4px;
+}
+
+.profielmenulist li:hover {
+	background-color:#50A34B;
+	color:white;
+}
+
+.woonplaats{
+	text-transform: capitalize;
+	font-family:'Open Sans', sans-serif;
+	font-size:15px;
+	font-weight:600;
+	color:#4D4B4C;
+}
+
+#gegevensbewerkvak{
+	height:600px;
+	background-color:#DAFAE2;
+	margin-left: 170px;
+	display:none;
+
+}
+
+.gegevenswijzigtabel{
+	font-family:'Open Sans', sans-serif;
+	padding:20px 0px 0px 35px;
+	color:#4D4B4C;
+	font-size:20px;
+}
+
+.gegevenswijzigtabel td {
+	padding:20px 160px 0px 0px;
+}
+
+.textvak {
+  padding: 10px 10px 10px 10px;
+  width: 150px;
+  margin:1px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  font-size:20px;
+}
+
+#gegevens:hover + .gegevensbewerkvak{
+    display:block;
+}
+.gegevensbewerkvak:hover {
+    display:block;
+}
+
+#test123{
+	height:600px;
+	background-color:#DAFAE2;
+	margin-left: 170px;
+	display:none;
+
+}
+
+.filters:hover + .test123{
+    display:block;
+}
+
+.testknop {
+	padding:10px 45px 10px 8px;
+	color:#4D4B4C;
+	border-top-left-radius:4px;
+	border-bottom-left-radius:4px;
+	border:none;
+	font-family:'Open Sans', sans-serif;
+	font-size:25px;
+	font-weight:600;
+	text-align:left;
+	
+}
+
+.testknop:hover{
+	background-color:#50A34B;
+	color:white;
+}
+
+
+.profielmenu {
+	background-color:#DFDFDF;
+	width:550px;
+	height:833px;
+	float:left;
+	margin-left:-10px;
+}
+
+.profielmenu ul{
+    float:right;
+	list-style-type:none;
+	font-family:'Open Sans', sans-serif;
+	font-size:25px;
+	font-weight:600;
+}
+
+.profilebutton {
+    padding:10px 45px 10px 8px;
+	color:#4D4B4C;
+	border-top-left-radius:4px;
+	border-bottom-left-radius:4px;
+	border:none;
+	font-family:'Open Sans', sans-serif;
+	font-size:25px;
+	font-weight:600;
+	text-align:left;
+}
+
+.profilebutton:hover {
+    background-color:#50A34B;
+    color:white;
+}
+
+#filtervak{
+    width:100%;
+    min-height:833px;
+    background-color:#DAFAE2;
+    display:none;
+}
+
+#reizenvak{
+    width:100%;
+    min-height:833px;
+    background-color:#DAFAE2;
+    display:none;
+}
+
+#berichtenvak{
+    width:100%;
+    min-height:833px;
+    background-color:#DAFAE2;
+    display:none;
+}
+
+#gegevensvak{
+    width:100%;
+    min-height:833px;
+    background-color:#DAFAE2;
+    display:block;
+}
+
+#instellingenvak{
+    width:100%;
+    min-height:833px;
+    background-color:#DAFAE2;
+    display:none;
+}
+
+.profilebutton2 {
+	color:white;
+	border-radius:4px;
+	border:none;
+	font-family:'Open Sans', sans-serif;
+	font-size:25px;
+	font-weight:600;
+	margin-left:450px;
+	background-color:#50A34B;
+}

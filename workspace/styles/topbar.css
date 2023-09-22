@@ -1,0 +1,107 @@
+/* visited link */
+.topknop:visited {
+    color: white;
+}
+
+.topknop:link {
+    color: white;
+}
+
+.topknop:active {
+    color: white;    
+}
+
+.topknop:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.topknop {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+}
+
+/*#loginknop {
+    background-color: darkgreen;
+}*/
+
+
+#header {
+    width: 100%;
+    color: white;
+    background: #50A34B;
+    height: 50px;
+}
+
+.logo {
+    width: 25%;
+    height: 50px;
+    float: left;
+}
+
+
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+
+
+.navigation > ul > li > a {
+    color: white;
+    text-decoration: none;  
+}
+
+h5 {
+    margin: 0px;
+    padding: 14px 14px 14px 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.navigation {
+    width: 75%;
+    height: 50px;
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    position:relative;
+}
+
+.navigation > ul > li {
+    float: right;
+    list-style-type:none;
+    padding: 0px 28px 0px 28px;
+}
+
+.sub-menut {
+    background-color:#50A34B;
+    position:absolute;
+    font-family: 'Open Sans', sans-serif;
+    list-style-type:none;
+    padding-left:0px;
+    padding-top:5px;
+    display:none;
+}
+
+.sub-menut > li {
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    width:70px;
+}
+
+.sub-menut > li > a{
+    text-decoration:none;
+}
+
+.username:hover + .sub-menut{
+    display:block;
+}
+.sub-menut:hover {
+    display:block;
+}
+

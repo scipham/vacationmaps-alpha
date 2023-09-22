@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Slider - Range slider</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  
+    </head>
+    <body>
+        <form action="./scripts/php/searchAccomodatie.php" method="post">
+        <List>
+        <p>Aantal mensen:</p>
+        <select id=aantalMensen name=aantalMensen>
+            <option value=aantalMensen1>1</option>
+            <option value=aantalMensen2  selected="selected">2</option>
+            <option value=aantalMensen3>3</option>
+            <option value=aantalMensen4>4</option>
+            <option value=aantalmensen5>5</option>
+            <option value=aantalmensen6>6</option>
+                <option value=aantalmensen7+>7+</option>
+        </select>
+    
+        <div data-role="rangeslider">
+        <label for="price-min">Prijs €:</label>
+        <input type="range" name="price-min" id="price-min" value="0" min="0" max="10000">
+        <label for="price-max">Price:</label>
+        <input type="range" name="price-max" id="price-max" value="5000" min="0" max="10000">
+      </div>
+      
+<div id="slider-range" ></div>
+        
+    <p> Begin reis</p>
+    <input name="reisBegin" type="date"/>
+    <p>Einde reis</p>        
+      <input name="reisEind" type="date"/>
+        
+        
+
+        
+        <List>
+        <p>Voorzieningen:</p>
+        <ul><label>Rolstoelvriendelijk</label><input name=vRol type=checkbox value="voorzieningRolstoel"></ul>
+        <ul><label>Televisie</label><input name=vTv type=checkbox value="voorzieningTV"></ul>
+        <ul><label>Draadloos internet</label><input name=vLift type=checkbox value="voorzieningWifi"></ul>
+       <ul><label>Roomservice</label><input name=vRS type=checkbox value="voorzieningRS"></ul>
+            </List>        
+     
+     
+      
+     
+        <p>Maximale afstand ziekenhuis (In Kilometer)</p>
+        <input type="range" name="afstandZiek" id="reistijd-max" value="100" min="0" max="100">
+
+     
+        <br>
+
+
+           
+     
+                     <label>Reiswijze</label> 
+     <select name=reisSoort>
+            <option value="reisGeenVoorkeur" selected="selected">Geen voorkeur</option>
+            <option value=reisVliegtuig>Vliegtuig</option>
+            <option value=reisTrein>Trein</option>
+            <option value=reisBus>Bus</option>
+            <option value=reisZelf>Ik regel de reis zelf</option>
+      </select>
+      <br>
+      <p>Maximale reistijd in uren (aan één stuk)</p>
+        <input type="range" name="reistijd-max" id="reistijd-min" value="48" min="0" max="48">
+      
+        <input type="submit" value="Zoeken"></input>
+        </form>
+
+    </body>
+</html>

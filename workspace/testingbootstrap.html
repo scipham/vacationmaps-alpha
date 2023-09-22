@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>VactionMaps - Ontzorgt op Vakantie</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+
+
+</head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>  
+  <!--
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker2" ).datepicker();
+  } );
+  </script> -->
+  
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+
+<link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+<body>
+    
+	<div id="header">
+		<div class="logo">
+			<h5>VacationMaps</h5>
+		</div>
+		<div class="navigation">
+			<ul>
+		 	 	<li><a class="active" href="login.html">Login</a></li>
+  				<li><a href="contact.html">Contact</a></li>
+  				<li><a href="overons.html">Over ons</a></li>
+  				<li><a href="start.html">Home</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="content">
+		<div id="filterpanel">
+		    <div class="container-fluid">
+                <div class="row">
+                    <div id="test" class="col-md-12">
+                        <h1>Filters</h1>
+                        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                        
+                        <div id="fpreiz_wrapper">
+                            <div class="fpreiz">
+                                 <button class="accordion">Reiziger</button>
+                                <div class="panel">Filter #1<br>Filter #2<br>Filter #3</div>
+                            </div>
+
+                            <div class="fpreiz">
+                                 <button class="accordion">Reiziger</button>
+                                <div class="panel">Filter #1<br>Filter #2<br>Filter #3</div>
+                            </div>
+                        
+                        </div>
+
+                        <button id="add_trav">Reiziger toevoegen</button>
+
+                        <script>
+
+                        var accordions=document.querySelectorAll("button.accordion");
+
+                        for(var i=0;i<accordions.length;i++){
+                          accordions[i].onclick=function(){
+                            this.classList.toggle("active");
+                            this.nextElementSibling.classList.toggle("show");
+                          }
+                        }
+                            
+                            $("#add_trav").click(function () {
+      $("#fpreiz_wrapper").append('<div class="fpreiz"><button class="accordion">Reiziger</button><div class="panel">Filter #1<br>Filter #2<br>Filter #3</div></div>');
+                          
+                                 accordions=document.querySelectorAll("button.accordion");
+                                
+                                 for(var i=0;i<accordions.length;i++){
+                          accordions[i].onclick=function(){
+                            this.classList.toggle("active");
+                            this.nextElementSibling.classList.toggle("show");
+                          }
+                        }
+                                
+    });
+
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+            <div class="filterpanelButton">
+                <button id="toon_res">Toon Resultaten</button>
+            </div>
+		</div>
+		  <div id="rightcontent">
+		  <div id="searchbar">
+               <!-- <ul> Waarheen:
+					<input type="text" class="tekst" name="search" placeholder="Zoeken...">
+ 					Van: <input type="date" class="tekst" placeholder="Zoeken...">
+ 					Tot: <input type="date" class="tekst" placeholder="Zoeken...">
+ 				   <span class="knop"> <button type="button" class="button button1" placeholder="Zoeken...">Zoeken</button></span>
+                </ul>-->
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-3">
+                          <label for="waarheen">Waarheen</label>
+                          <input id="waarheen" type="text" class="tekst" name="search" placeholder="Zoeken...">
+                      </div>
+                      <div class="col-md-3">
+                          <label for="van">Van</label>
+                          <input id="van" type="date" class="tekst" placeholder="Zoeken...">
+                      </div>
+                      <div class="col-md-3">
+                          <label for="tot">Tot</label>
+                          <input id="tot" type="date" class="tekst" placeholder="Zoeken...">
+                      </div>
+                      <div class="col-md-3"><input type="submit" class="zoekbutton" value="Zoeken"></div>
+                  </div>
+              </div>
+</div>
+		<div id="map">
+		    
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5125429.316419938!2d10.415039000000002!3d51.151785999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sde!4v1488983184221" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+		</div>
+		</div>
+	</div>
+</body>
+</html>

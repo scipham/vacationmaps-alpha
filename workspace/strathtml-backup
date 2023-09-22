@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>VactionMaps - Ontzorgt op Vakantie</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<script src="scripts/js/vacationscript.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<div class="logo">
+			<h5>VacationMaps</h5>
+		</div>
+		<div class="navigation">
+			<ul>
+		 	 	<li><a class="active" href="login.html">Login</a></li>
+  				<li><a href="contact.html">Contact</a></li>
+  				<li><a href="overons.html">Over ons</a></li>
+  				<li><a href="start.html">Home</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="content">
+		<div id="filterpanel">
+			<h2>Filters</h2>
+			<p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+			<button class="accrodion">Reiziger 1</button>
+			    <div class="panel">
+			        wqrwqerwerwerwerewrwerweqrwerwer
+			    </div>
+			    <button class="accrodion">Reiziger 1</button>
+			    <div class="panel">
+			        wqrwqerwerwerwerewrwerweqrwerwer
+			    </div>
+		</div>
+		<div id="map">
+				    <ul> Waarheen:
+					<input type="text" name="search" placeholder="Search..">
+ 					Van: <input type="text" id="datepicker">
+ 					Tot: <input type="text" id="datepicker2">
+ 					<button type="button">Zoeken</button>
+
+
+</ul>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5125429.316419938!2d10.415039000000002!3d51.151785999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sde!4v1488983184221" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+		</div>
+	</div>
+</body>
+</html>

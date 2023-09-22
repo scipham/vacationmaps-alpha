@@ -1,0 +1,1 @@
+<img src="./rating.png" style="height: 1540px; width: 1200px; position: absolute; left: 30% "/>

@@ -1,0 +1,61 @@
+header("https://wikipedia.org");
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Slider - Range slider</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<body>
+     <form action="./assets/filleo/debugFrame.php" method="post">
+                 <p>Locatie:</p>
+                 <select id=locatie name=locatieType>
+        <option value=""  selected="selected">-----------</option>
+        <option value=0>Strand</option> 
+        <option value=40>Bos</option> 
+        <option value=130>Bergen</option> 
+        </select>
+
+       
+<div id="slider-range" ></div>
+        
+                 <h2>Klimaat</h2>
+         
+                 <div data-role="rangeslider">
+           <label for="temp-min">Gemiddelde temperatuur:</label>
+          <input type="range" name="temp-min" id="temp-min" value="20" min="-50" max="50">
+         <label for="temp-max">Temperatuur:</label>
+          <input type="range" name="temp-max" id="temp-max" value="40" min="-50" max="50">
+           </div>
+           
+            <div data-role="rangeslider">
+           <label for="lv-min">Gemiddelde luchtvochtigheid:</label>
+          <input type="range" name="lv-min" id="lv-min" value="10" min="0" max="90">
+         <label for="lv-max">Luchtvochtigheid:</label>
+          <input type="range" name="lv-max" id="lv-max" value="100" min="10" max="100">
+           </div>
+                 
+
+         <label for="neerslag-max">Maximale neerslag (Gemiddelde in mm):</label>
+          <input type="range" name="neerslag-max" id="neerslag-max" value="20" min="0" max="100">
+          
+           
+
+         <label for="zonkracht-max">Maximale zonkracht:</label>
+          <input type="range" name="zonkracht-max" id="zonkracht-max" value="10" min="0" max="10">
+          
+         <input type="submit" value="Zoeken"></input>
+    </form>
+</body>
+</html>
